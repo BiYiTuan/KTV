@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:layout_width="915dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/line_umlist" />
+
+    <TextView
+        android:id="@+id/id_about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="91dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="133dp"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="24sp" />
+
+</RelativeLayout>

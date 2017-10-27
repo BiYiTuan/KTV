@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="58dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:minWidth="444dp">
+    
+	<TextView 
+	    android:id="@+id/tv_menu_select_song_name"
+	    android:layout_width="170dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginStart="25dp"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:textSize="28sp"
+	    android:textColor="@color/umlist_normal_text"
+	    android:text="@string/um_default_name"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_menu_select_song_play"
+	    android:layout_width="60dp"
+	    android:layout_height="52dp"
+	    android:layout_marginStart="25dp"
+	    android:src="@drawable/btn_play_unselected"
+	    android:contentDescription="@string/app_name"
+	    android:focusable="false"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_menu_select_song_add"
+	    android:layout_width="60dp"
+	    android:layout_height="52dp"
+	    android:layout_marginStart="9dp"
+	    android:src="@drawable/btn_add_unselected"
+	    android:contentDescription="@string/app_name"
+	    android:focusable="false"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_menu_select_song_collect"
+	    android:layout_width="60dp"
+	    android:layout_height="52dp"
+	    android:layout_marginStart="9dp"
+	    android:src="@drawable/btn_collect_unselected"
+	    android:contentDescription="@string/app_name"
+	    android:focusable="false"/>
+	
+
+</LinearLayout>

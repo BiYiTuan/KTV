@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="550dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/menu_selected_bg"
+    android:layoutAnimation="@anim/childview_anim_layout" >
+
+    <TextView
+        android:id="@+id/id_dialog_menu_select_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/menu_select_recommand_title"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="22sp" />
+    
+    <TextView
+        android:id="@+id/id_dialog_menu_select_category_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_dialog_menu_select_category_name"
+        android:layout_toRightOf="@+id/id_dialog_menu_select_category_name"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/umlist_count_text"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/id_dialog_menu_select_category_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:focusable="true"
+        android:layoutAnimation="@anim/list_anim_layout"
+        android:listSelector="@drawable/listselector_yellow_444"
+        android:scrollbars="none" >
+
+        <requestFocus />
+    </ListView>
+
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_dialog_menu_select_category_waitting"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/search_loading" />
+    
+    <TextView
+        android:id="@+id/id_dialog_menu_select_category_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/menu_select_category_no"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

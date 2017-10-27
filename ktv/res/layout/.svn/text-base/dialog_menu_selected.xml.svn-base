@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="550dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/menu_selected_bg" >
+
+    <TextView
+        android:id="@+id/id_menu_selected_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/menu_selected_title"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/id_menu_selected_no"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/menu_selected_no"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/id_menu_selected_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:focusable="true"
+        android:layoutAnimation="@anim/list_anim_layout"
+        android:listSelector="@drawable/listselector_purple_444"
+        android:scrollbars="none" >
+
+        <requestFocus />
+    </ListView>
+
+</RelativeLayout>

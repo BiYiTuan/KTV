@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dp" 
+    android:layout_height="720dp"
+    android:background="@drawable/mask_screen"
+    android:gravity="center_vertical" >
+    
+    <!-- 鉴权失败提示语 -->
+    <TextView
+        android:id="@+id/id_auth_text"
+        android:layout_width="1280dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text=""
+         android:textColor="@color/umlist_normal_text"
+        android:textSize="40sp" />
+
+    <!-- 鉴权失败确定 -->
+    <Button
+        android:id="@+id/id_auth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_auth_text"
+        android:layout_marginLeft="550dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_exit_selected"
+        android:textColor="@color/umlist_focus_text"
+        android:textSize="32sp"
+        android:text="@string/exit_sure" />
+
+</RelativeLayout>

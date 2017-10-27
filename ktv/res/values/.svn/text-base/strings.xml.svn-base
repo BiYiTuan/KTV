@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    
+    <string name="action_settings">Settings</string>
+	<string name="app_name">我爱Ｋ歌</string>
+    <string name="fee_auth_error">您的观看权限已到期！请充值后观看</string>
+    <string name="fee_auth_left">立即充值</string>
+    <string name="fee_auth_right">下次再说</string>
+    <string name="fee_auth_alert">您的观看权限仅剩%1$s天！请充值后观看</string>
+    <string name="device_auth_error">鉴权失败：%1$s</string>
+    <string name="network_anomaly">网络异常, 请检查网络</string>
+    <!-- 首页 -->
+    <string name="index_selected">已点歌曲</string>
+    <string name="index_usercenter">个人中心</string>
+    <string name="index_cfy_1">华语K歌榜</string>
+    <string name="index_cfy_2">新歌抢先榜</string>
+    <string name="index_cfy_3">拼音点歌</string>
+    <string name="index_cfy_4">分类点歌</string>
+    <string name="index_cfy_5">歌星点歌</string>
+    <string name="index_cfy_6">语种点歌</string>
+    <!-- 已点歌曲 -->
+    <string name="um_song_selected">已点歌曲</string>
+    <string name="um_song_sung">已唱歌曲</string>
+    <string name="um_count">(共%1$s首)</string>
+    <string name="um_clear_selected">清空</string>
+    <string name="um_delDuplicate_selected">去重</string>
+    <string name="um_default_name">默认</string>
+    <string name="um_default_count">20</string>
+    <!-- 用户中心 -->
+    <string name="usercenter_collect">我的收藏</string>
+    <string name="usercenter_collect_count">(共%1$s首)</string>
+    <string name="usercenter_collect_clear">清空</string>
+    <string name="usercenter_collect_addall">全部添加至已点</string>
+    <string name="usercenter_setting">设置</string>
+    <string name="usercenter_setting_checkupdate">检测更新</string>
+    <string name="usercenter_setting_version">版本号V%1$s</string>
+    <string name="usercenter_setting_lastestversion">已是最新版本</string>
+    <string name="usercenter_about">关于</string>
+    <!-- 专题列表 -->
+    <string name="albumlist_count">共%1$s首</string>
+    <!-- 拼音选歌-->
+    <string name="search_keyword_limit">筛选条件不要超过10个字节</string>
+    <string name="search_empty">暂无数据</string>
+    <string name="search_keyword_keyword_search">拼音点歌\t(%1$s)</string>
+    <string name="search_keyword_py_search">拼音点歌</string>
+    <string name="search_keyword_hotwordrecommand">热词推荐</string>
+    <string name="search_keyword_hint">输入歌名首字母</string>
+    <string name="search_keyword_a">A</string>
+    <string name="search_keyword_b">B</string>
+    <string name="search_keyword_c">C</string>
+    <string name="search_keyword_d">D</string>
+    <string name="search_keyword_e">E</string>
+    <string name="search_keyword_f">F</string>
+    <string name="search_keyword_g">G</string>
+    <string name="search_keyword_h">H</string>
+    <string name="search_keyword_i">I</string>
+    <string name="search_keyword_j">J</string>
+    <string name="search_keyword_k">K</string>
+    <string name="search_keyword_l">L</string>
+    <string name="search_keyword_m">M</string>
+    <string name="search_keyword_n">N</string>
+    <string name="search_keyword_o">O</string>
+    <string name="search_keyword_p">P</string>
+    <string name="search_keyword_q">Q</string>
+    <string name="search_keyword_r">R</string>
+    <string name="search_keyword_s">S</string>
+    <string name="search_keyword_t">T</string>
+    <string name="search_keyword_u">U</string>
+    <string name="search_keyword_v">V</string>
+    <string name="search_keyword_w">W</string>
+    <string name="search_keyword_x">X</string>
+    <string name="search_keyword_y">Y</string>
+    <string name="search_keyword_z">Z</string>
+    <string name="search_keyword_del">删除</string>
+    <string name="search_keyword_clear">清空</string>
+    <string name="tip_select_song"><Data><![CDATA[添加<font color="#f4ee06">%1$s</font>到已点歌曲列表]]></Data></string>
+    <!-- 分类选歌-->
+    <string name="category_title">分类点歌</string>
+    <string name="categorysinger_title">歌手点歌</string>
+    <string name="categorylang_title">语种点歌</string>
+    <string name="searchsinger_keyword_hint">搜索：歌星</string>
+    <string name="category_count">(%1$s)</string>
+    <!-- 播放器-->
+    <string name="exit_sure">确定</string>
+    <string name="exit_cancel">取消</string>
+    <string name="exit_tip">您确定要退出演唱么？</string>
+    <string name="default_progress">1:23</string>
+    <string name="menu_play">播放</string>
+    <string name="menu_pause">暂停</string>
+    <string name="menu_next">切歌</string>
+    <string name="menu_accompaniment">伴唱</string>
+    <string name="menu_acoustic">原唱</string>
+    <string name="menu_replay">重唱</string>
+    <string name="menu_tone">调音</string>
+    <string name="menu_selected">已点</string>
+    <string name="menu_select">点歌</string>
+    <string name="menu_tone_title_1">伴奏：</string>
+    <string name="menu_tone_title_2">话筒：</string>
+    <string name="menu_selected_title">已点歌曲\t(%1$s)</string>
+    <string name="menu_select_1">拼音点歌</string>
+    <string name="menu_select_2">热门推荐</string>
+    <string name="menu_select_3">分类点歌</string>
+    <string name="menu_select_4">歌星点歌</string>
+    <string name="menu_select_5">语种点歌</string>
+    <string name="menu_select_recommand_title">热门推荐\t(%1$s)</string>
+    <string name="menu_search_keyword_keyword_search">拼音点歌(%1$s)</string>
+    <string name="menu_selected_no">暂无已点歌曲, 快去点歌吧</string>
+    <string name="menu_select_category_no">没有找到相关歌曲</string>
+    <string name="menu_select_category_count">(%1$s)</string>
+    <string name="menu_singer_no">没有找到相关歌手</string>
+    <string name="menu_singer_count">(%1$s)</string>
+    <string name="menu_song_no">没有找到相关歌曲</string>
+    <string name="menu_song_count">(%1$s)</string>
+    <string name="search_no_hotword">暂无推荐热词</string>
+    <string name="search_no_result">没有找到相关歌曲</string> 
+    <string name="player_curplay">正在播放 :</string>
+    <string name="player_next_song">下一首 :</string>
+    <string name="player_selected_empty">已点歌曲为空, 请继续点歌</string>
+    
+    <string name="toast_add_all">已全部添加至已点歌曲列表</string>
+    <string name="toast_add_zero">暂无歌曲可添加</string>
+    <string name="toast_add_errro">添加失败</string>
+    <string name="toast_network_normal">网络异常</string>
+    <string name="toast_load_failed">加载失败</string>
+    <string name="toast_error_code">错误码</string>
+    <string name="toast_switch_next">加载失败: %1$s, 已为您切换到下一首</string>
+    <string name="toast_want_to_exit_app">再按一次将退出应用</string>
+    <string name="toast_invalid">该歌曲不存在</string>
+    <string name="toast_top">已是最顶部</string>
+    <string name="dialog_update_tip">有新版本啦，是否升级?</string>
+    <string name="dialog_update_now">立即升级</string>
+    <string name="dialog_update_next">下次再说</string>
+    
+</resources>

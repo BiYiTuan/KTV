@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layoutAnimation="@anim/childview_anim_layout" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="568dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/search_keyword_hotwordrecommand"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="22sp" />
+
+    <GridView
+        android:id="@+id/id_search_hotword_gridview"
+        android:layout_width="518dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="547dp"
+        android:layout_marginTop="83dp"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:horizontalSpacing="30dp"
+        android:listSelector="@drawable/listselector_yellow_244_selector"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="9dp" >
+        <requestFocus />
+    </GridView>
+    
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_search_hotword_waitting"
+        android:layout_height="96dp"
+        android:layout_width="96dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginStart="826dp"
+        android:src="@drawable/search_loading"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_search_hotword_no"
+        android:layout_width="733dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="547dp"
+        android:gravity="center"
+        android:text="@string/search_no_hotword"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

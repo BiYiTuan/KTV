@@ -1,0 +1,157 @@
+/**
+ * @Title: ImageLoaderUtils.java
+ * @Prject: Ktv
+ * @Package: com.sz.ead.app.ktv.utils
+ * @Description: 图片下载util
+ * @author: zhaoqy
+ * @date: 2015-7-29 下午4:33:16
+ * @version: V1.0
+ */
+
+package com.sz.ead.app.ktv.utils;
+
+import android.content.Context;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
+import com.sz.ead.app.ktv_wakg.R;
+
+public class ImageLoaderUtils 
+{
+	public static ImageLoader mImageLoader; //图片下载管理
+	
+	/**
+	 * 
+	 * @Title: initImageLoader
+	 * @Description: 初始化图片下载器
+	 * @param context
+	 * @return: void
+	 */
+	public static void initImageLoader(Context context) 
+	{
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration
+				.Builder(context)
+				.threadPriority(Thread.NORM_PRIORITY - 2)
+				.denyCacheImageMultipleSizesInMemory()
+				.discCacheFileNameGenerator(new Md5FileNameGenerator())
+				.tasksProcessingOrder(QueueProcessingType.LIFO)
+				.discCacheSize(20*1024*1024)
+				.discCacheFileCount(100).memoryCacheSize(1024 * 1024 * 10)
+				.build();
+		ImageLoader.getInstance().init(config);
+		mImageLoader = ImageLoader.getInstance();
+	}
+	
+	/**
+	 * 
+	 * @Title: unInit
+	 * @Description: 反初始化图片下载服务,清除缓存
+	 * @return: void
+	 */
+	public static void unInitImageLoaderService()
+	{
+		if(mImageLoader != null)
+		{
+			mImageLoader.clearMemoryCache();
+			//mImageLoader.clearDiscCache();
+		}	
+	}
+	
+	public static DisplayImageOptions mMainRecdOption = new DisplayImageOptions.Builder()
+	   //.showStubImage(R.drawable.index_recommend_default)
+	   .showImageForEmptyUri(R.drawable.index_recommend_default)
+	   .showImageOnFail(R.drawable.index_recommend_default)
+	   //.cacheInMemory()
+	   //.cacheOnDisc()
+	   //.delayBeforeLoading(100)
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(19))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mMainScaleOption = new DisplayImageOptions.Builder()
+	   //.showStubImage(R.drawable.index_recommend_default)
+	   //.showImageForEmptyUri(R.drawable.index_recommend_default)
+	   //.showImageOnFail(R.drawable.index_recommend_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   .delayBeforeLoading(100)
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(19))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mSongOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.singer_icon_default)
+	   .showImageForEmptyUri(R.drawable.singer_icon_default)
+	   .showImageOnFail(R.drawable.singer_icon_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(8))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mLangOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.lang_default)
+	   .showImageForEmptyUri(R.drawable.lang_default)
+	   .showImageOnFail(R.drawable.lang_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(18))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mSingerCategoryOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.singer_icon_default)
+	   .showImageForEmptyUri(R.drawable.singer_icon_default)
+	   .showImageOnFail(R.drawable.singer_icon_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(18))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mSongCategoryOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.singer_icon_default)
+	   .showImageForEmptyUri(R.drawable.singer_icon_default)
+	   .showImageOnFail(R.drawable.singer_icon_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(18))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mSingerOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.singer_icon_default)
+	   .showImageForEmptyUri(R.drawable.singer_icon_default)
+	   .showImageOnFail(R.drawable.singer_icon_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(18))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions mCategoryOption = new DisplayImageOptions.Builder()
+	   .showStubImage(R.drawable.song_category_default)
+	   .showImageForEmptyUri(R.drawable.song_category_default)
+	   .showImageOnFail(R.drawable.song_category_default)
+	   .cacheInMemory()
+	   .cacheOnDisc()
+	   //.displayer(new SimpleBitmapDisplayer())
+	   .displayer(new RoundedBitmapDisplayer(15))  //设置圆角
+	   .build();
+	
+	public static DisplayImageOptions getOptions(int imageDefault)
+	{
+		DisplayImageOptions options = new DisplayImageOptions.Builder()
+		//.showImageOnLoading(imageDefault)
+		.showImageForEmptyUri(imageDefault)
+		.showImageOnFail(imageDefault)
+		//.cacheInMemory(true)
+		//.cacheOnDisc(true)
+		.delayBeforeLoading(100)
+		.displayer(new RoundedBitmapDisplayer(8)).build();
+		return options;
+	}
+}

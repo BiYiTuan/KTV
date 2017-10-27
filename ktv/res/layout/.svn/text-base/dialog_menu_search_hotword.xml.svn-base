@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layoutAnimation="@anim/childview_anim_layout" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="482dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/search_keyword_hotwordrecommand"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="22sp" />
+
+    <GridView
+        android:id="@+id/id_menu_search_hotword_gridview"
+        android:layout_width="420dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="465dp"
+        android:layout_marginTop="59dp"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:horizontalSpacing="20dp"
+        android:layoutAnimation="@anim/list_anim_layout"
+        android:listSelector="@drawable/listselector_yellow_200_selector"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" >
+        <requestFocus />
+    </GridView>
+    
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_menu_search_hotword_waitting"
+        android:layout_height="96dp"
+        android:layout_width="96dp"
+        android:layout_marginStart="651dp"
+        android:layout_marginTop="227dp"
+        android:src="@drawable/search_loading"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_menu_search_hotword_no"
+        android:layout_width="452dp"
+        android:layout_height="550dp"
+        android:layout_marginLeft="482dp"
+        android:gravity="center"
+        android:text="@string/search_no_hotword"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

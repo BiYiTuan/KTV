@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="290dp"
+    android:background="@drawable/menu_player_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+
+        <SeekBar
+            android:id="@+id/id_player_menu_seekbar"
+            style="?android:attr/seekBarStyle"
+            android:layout_width="1014dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:maxHeight="16dp"
+            android:minHeight="16dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:progressDrawable="@drawable/style_time_progressbar"
+            android:thumb="@drawable/progressbar_time_thumb" />
+
+        <TextView
+            android:id="@+id/id_player_menu_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/id_player_menu_seekbar"
+            android:gravity="end"
+            android:textColor="@color/umlist_check_text"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/id_player_menu_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/id_player_menu_seekbar"
+            android:gravity="start"
+            android:textColor="@color/umlist_check_text"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <!-- 暂停 -->
+    <TextView
+        android:id="@+id/id_player_menu_pause"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_pause_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_pause"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 切歌 -->
+    <TextView
+        android:id="@+id/id_player_menu_next"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_next_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_next"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 伴唱 -->
+    <TextView
+        android:id="@+id/id_player_menu_accompaniment"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="466dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_accompaniment_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_accompaniment"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 重唱 -->
+    <TextView
+        android:id="@+id/id_player_menu_replay"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_replay_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_replay"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 调音 -->
+    <TextView
+        android:id="@+id/id_player_menu_tone"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="734dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_tone_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_tone"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 已点 -->
+    <TextView
+        android:id="@+id/id_player_menu_selected"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="868dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_selected_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_selected"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+    <!-- 点歌 -->
+    <TextView
+        android:id="@+id/id_player_menu_select"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1002dp"
+        android:layout_marginTop="123dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/menu_select_selector"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_select"
+        android:textColor="@color/menu_txt_sel"
+        android:textSize="22sp" />
+
+</RelativeLayout>

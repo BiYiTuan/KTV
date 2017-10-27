@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/id_song_poster"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="59dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/singer_icon_default" />
+
+    <TextView
+        android:id="@+id/id_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/id_song_poster"
+        android:layout_alignStart="@id/id_song_poster"
+        android:layout_marginTop="275dp"
+        android:gravity="center"
+        android:text="@string/index_cfy_1"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/id_song_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/id_song_poster"
+        android:layout_alignStart="@id/id_song_poster"
+        android:layout_below="@+id/id_song_name"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/albumlist_count"
+        android:textColor="@color/umlist_count_text"
+        android:textSize="32sp" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="620dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/line_umlist" />
+
+    <ListView
+        android:id="@+id/id_song_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="62dp"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="9dp"
+        android:focusable="true"
+        android:layoutAnimation="@anim/list_anim_layout"
+        android:listSelector="@drawable/listselector_blue_888"
+        android:scrollbars="none" >
+
+        <requestFocus />
+    </ListView>
+
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_song_waitting"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="745dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/search_loading"
+        android:visibility="gone" />
+    
+    <com.sz.ead.app.ktv.ui.widget.EmptyView
+        android:id="@+id/id_song_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+</RelativeLayout>

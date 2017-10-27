@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="602dp"
+    android:layout_height="720dp"
+    android:background="@drawable/singer_search_bg" >
+    
+    <!-- 键盘 -->
+   <TextView
+       	android:id="@+id/tv_search_a"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="121dp"
+		android:text="@string/search_keyword_a"/>
+   
+   <TextView
+        android:id="@+id/tv_search_b"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="121dp"
+		android:text="@string/search_keyword_b"/>
+   
+   <TextView
+        android:id="@+id/tv_search_c"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="272dp"
+		android:layout_marginTop="121dp"
+		android:text="@string/search_keyword_c"/>
+   
+   <TextView
+        android:id="@+id/tv_search_d"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="121dp"
+		android:text="@string/search_keyword_d"/>
+   
+   <TextView
+        android:id="@+id/tv_search_e"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="444dp"
+		android:layout_marginTop="121dp"
+		android:text="@string/search_keyword_e"/>
+   
+   <TextView
+        android:id="@+id/tv_search_f"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="207dp"
+		android:text="@string/search_keyword_f"/>
+   
+   <TextView
+		android:id="@+id/tv_search_g"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="207dp"
+		android:text="@string/search_keyword_g"/>
+   
+   <TextView
+		android:id="@+id/tv_search_h"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="272dp"
+		android:layout_marginTop="207dp"
+		android:text="@string/search_keyword_h"/>
+   
+   <TextView
+		android:id="@+id/tv_search_i"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="207dp"
+		android:text="@string/search_keyword_i"/>
+   
+   <TextView
+		android:id="@+id/tv_search_j"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="444dp"
+		android:layout_marginTop="207dp"
+		android:text="@string/search_keyword_j"/>
+   
+   <TextView
+		android:id="@+id/tv_search_k"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="293dp"
+		android:text="@string/search_keyword_k"/>
+   
+   <TextView
+		android:id="@+id/tv_search_l"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="293dp"
+		android:text="@string/search_keyword_l"/>
+   
+   <TextView
+		android:id="@+id/tv_search_m"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="272dp"
+		android:layout_marginTop="293dp"
+		android:text="@string/search_keyword_m"/>
+   
+   <TextView
+		android:id="@+id/tv_search_n"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="293dp"
+		android:text="@string/search_keyword_n"/>
+   
+   <TextView
+		android:id="@+id/tv_search_o"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="444dp"
+		android:layout_marginTop="293dp"
+		android:text="@string/search_keyword_o"/>
+   
+   
+   <TextView
+		android:id="@+id/tv_search_p"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="379dp"
+		android:text="@string/search_keyword_p"/>
+   
+   <TextView
+		android:id="@+id/tv_search_q"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="379dp"
+		android:text="@string/search_keyword_q"/>
+   
+   <TextView
+		android:id="@+id/tv_search_r"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="272dp"
+		android:layout_marginTop="379dp"
+		android:text="@string/search_keyword_r"/>
+   
+   <TextView
+		android:id="@+id/tv_search_s"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="379dp"
+		android:text="@string/search_keyword_s"/>
+   
+   <TextView
+		android:id="@+id/tv_search_t"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="444dp"
+		android:layout_marginTop="379dp"
+		android:text="@string/search_keyword_t"/>
+   
+   
+   <TextView
+		android:id="@+id/tv_search_u"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="465dp"
+		android:text="@string/search_keyword_u"/>
+   
+   <TextView
+        android:id="@+id/tv_search_v"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="465dp"
+		android:text="@string/search_keyword_v"/>
+   
+   <TextView
+		android:id="@+id/tv_search_w"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="272dp"
+		android:layout_marginTop="465dp"
+		android:text="@string/search_keyword_w"/>
+   
+   <TextView
+		android:id="@+id/tv_search_x"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="465dp"
+		android:text="@string/search_keyword_x"/>
+   
+   <TextView
+		android:id="@+id/tv_search_y"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="444dp"
+		android:layout_marginTop="465dp"
+		android:text="@string/search_keyword_y"/>
+   <TextView
+		android:id="@+id/tv_search_z"
+		style="@style/Keyboard_Search"
+		android:layout_marginStart="100dp"
+		android:layout_marginTop="561dp"
+		android:text="@string/search_keyword_z"/>
+   
+   <TextView
+		android:id="@+id/tv_search_del"
+		style="@style/Keyboard_Search"
+		android:onClick="doKeyboardDel"
+		android:layout_marginStart="186dp"
+		android:layout_marginTop="561dp"
+		android:layout_width="156dp"
+		android:background="@drawable/btn_long_search_selector"
+		android:text="@string/search_keyword_del"/>
+   
+   <TextView
+        android:id="@+id/tv_search_clear"
+		style="@style/Keyboard_Search"
+		android:onClick="doKeyboardClear"
+		android:layout_marginStart="358dp"
+		android:layout_marginTop="561dp"
+		android:layout_width="156dp"
+		android:background="@drawable/btn_long_search_selector"
+		android:text="@string/search_keyword_clear"/>
+   
+
+</RelativeLayout>

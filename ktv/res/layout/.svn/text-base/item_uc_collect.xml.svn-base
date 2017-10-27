@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="58dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_collect_item_name"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/um_default_name"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/id_collect_item_singer"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/um_default_name"
+        android:textColor="@color/umlist_weak_text"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/id_collect_item_play"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="25dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/btn_play_unselected" />
+
+    <ImageView
+        android:id="@+id/id_collect_item_add"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="9dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/btn_add_unselected" />
+
+    <ImageView
+        android:id="@+id/id_collect_item_del"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="9dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/btn_del_unselected" />
+
+</LinearLayout>

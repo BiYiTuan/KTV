@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <style name="dialog_style" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>                   <!-- dialog无标题 -->
+        <item name="android:background">@color/transparent</item>        <!-- dialog去掉边框 -->
+        <item name="android:windowBackground">@color/transparent</item>  <!-- dialog背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>            <!-- dialog弹出后当前的 activity背景变暗 -->
+    </style>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    
+    <style name="Ktv_Theme" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="TextAppearance">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/normal_text</item>
+    </style>
+    
+     <style name="TextAppearance.Index" parent="@style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/shadow_color</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowDy">4.0</item>
+    </style>
+    
+    <style name="TextAppearance.MainTab" parent="@style/TextAppearance">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:saveEnabled">false</item>
+    </style>
+    
+    <style name="TextAppearance.Marquee" parent="@style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    
+    
+    <style name="TextAppearance.Small" parent="@style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    
+    <style name="TextAppearance.Small.Marquee" parent="@style/TextAppearance.Small">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    
+    <style name="TextAppearance.Big" parent="@style/TextAppearance">
+        <item name="android:textSize">35.0sp</item>
+    </style>
+    
+    <style name="TextAppearance.Big.Marquee" parent="@style/TextAppearance.Big">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    
+    <style name="AnimationTopToast">
+        <item name="android:windowEnterAnimation">@anim/top_inwindow</item>
+        <item name="android:windowExitAnimation">@anim/top_outwindow</item>
+    </style>
+    
+    <style name="AnimationKtvDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enterwindow</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exitwindow</item>
+    </style>
+    
+    <style name="AnimationKtvBottomDialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_inwindow</item>
+        <item name="android:windowExitAnimation">@anim/bottom_outwindow</item>
+    </style>
+    
+    <style name="AnimationKtvRightDialog">
+        <item name="android:windowEnterAnimation">@anim/top_inwindow</item>
+        <item name="android:windowExitAnimation">@anim/right_outwindow</item>
+    </style>
+    
+    <style name="deviceauth_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvDialog</item>
+    </style>
+    
+    <style name="feeauth_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvDialog</item>
+    </style>
+    
+    
+    <style name="upgrade_dialog" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item><!--边框-->  
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->  
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->  
+        <item name="android:windowNoTitle">true</item><!--无标题-->  
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明    -->  
+        <item name="android:backgroundDimEnabled">true</item> 
+ 	</style> 
+ 	
+    <style name="Keyboard_Search">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/btn_umlist_txt_sel</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/btn_short_search_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">doKeyboardCharPress</item>
+    </style>
+    
+    <style name="Keyboard_Menu_Search">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/btn_umlist_txt_sel</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/btn_short_search_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    
+    <style name="Category_ScaleImageView">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:src">@drawable/category_default</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="Category_TextView">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/umlist_normal_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/um_default_name</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="Singer_ScaleImageView">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:src">@drawable/category_default</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="AnimationSearchSingerDialog">
+        <item name="android:windowEnterAnimation">@anim/right_inwindow</item>
+        <item name="android:windowExitAnimation">@anim/right_outwindow</item>
+    </style>
+    
+    <style name="search_singer_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationSearchSingerDialog</item>
+    </style>
+    
+     <style name="Keyboard_SearchSinger">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/btn_umlist_txt_sel</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/btn_short_search_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">doKeyboardCharPress</item>
+    </style>
+    
+     <style name="exit_player_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvDialog</item>
+    </style>
+    
+     <style name="menu_player_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvBottomDialog</item>
+    </style>
+    
+     <style name="menu_tone_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvDialog</item>
+    </style>
+    
+     <style name="menu_right_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationKtvRightDialog</item>
+    </style>
+
+</resources>

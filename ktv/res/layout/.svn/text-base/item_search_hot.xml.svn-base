@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="244dp"
+    android:layout_height="58dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:minWidth="244dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_search_hot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/um_default_name"
+        android:textColor="@color/item_txt_sel"
+        android:textSize="32sp" />
+
+</LinearLayout>

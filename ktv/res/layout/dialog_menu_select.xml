@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="550dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/menu_selected_bg" >
+
+    <!-- 拼音点歌 -->
+    <Button
+        android:id="@+id/id_menu_select_pinyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_select_selector"
+        android:text="@string/menu_select_1"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="36sp" />
+
+    <!-- 热门推荐 -->
+    <Button
+        android:id="@+id/id_menu_select_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+        android:background="@drawable/btn_select_selector"
+        android:text="@string/menu_select_2"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="36sp" />
+
+    <!-- 分类点歌 -->
+    <Button
+        android:id="@+id/id_menu_select_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/btn_select_selector"
+        android:text="@string/menu_select_3"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="36sp" />
+
+    <!-- 歌手点歌 -->
+    <Button
+        android:id="@+id/id_menu_select_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="338dp"
+        android:background="@drawable/btn_select_selector"
+        android:text="@string/menu_select_4"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="36sp" />
+
+    <!-- 语种点歌 -->
+    <Button
+        android:id="@+id/id_menu_select_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/btn_select_selector"
+        android:text="@string/menu_select_5"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="36sp" />
+
+</RelativeLayout>

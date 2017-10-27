@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    
+    <color name="fee_error">#ffff4000</color>
+    <color name="usercenter_fee_btn">#ff9e9fa4</color>
+    <color name="fenji_check">#ffffffff</color>
+    <color name="fenji_normal">#ffffffff</color>
+    
+    <color name="navi_txt_checked_color">#ffffffff</color>
+	<color name="navi_txt_unchecked_color">#ffa8a8a8</color>
+	
+	<color name="blue_text">#ff04aeef</color>
+	
+	<color name="focus_text">#ffffffff</color>
+    <color name="normal_text">#ffe1e1e1</color>
+    <color name="shadow_color">#88101010</color>
+    
+    <color name="umlist_focus_text">#ff00654a</color>
+    <color name="umlist_normal_text">#ffcafffe</color>
+    <color name="umlist_check_text">#fff4ee06</color>
+    <color name="umlist_count_text">#ffff00d2</color>
+    <color name="umlist_weak_text">#ff8e9fef</color>
+    <color name="umlist_hint_text">#ff788ae0</color>
+    <color name="menu_search_hint_text">#ff6b6f84</color>
+    
+    <color name="notice_red">#ffff007f</color>
+    
+    <color name="live_menu_index">#ff04aeef</color>
+    <color name="live_normal_text">#ffa8a8a8</color>
+    <color name="live_checked_text">#ff04aeef</color>
+    <color name="live_selected_text">#ffffffff</color>
+</resources>

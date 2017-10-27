@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.sz.ead.app.ktv.ui.widget.NoScrollViewPager
+        android:id="@+id/id_usercenter_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RadioGroup
+        android:id="@+id/id_usercenter_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="54dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/id_usercenter_collect"
+            android:layout_width="200dp"
+            android:layout_height="76dp"
+            android:background="@drawable/tab_mulist_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/usercenter_collect"
+            android:textColor="@color/tab_umlist_txt_sel"
+            android:textSize="38sp" >
+
+            <requestFocus />
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/id_usercenter_setting"
+            android:layout_width="200dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tab_mulist_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/usercenter_setting"
+            android:textColor="@color/tab_umlist_txt_sel"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/id_usercenter_about"
+            android:layout_width="200dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tab_mulist_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/usercenter_about"
+            android:textColor="@color/tab_umlist_txt_sel"
+            android:textSize="38sp"
+            android:visibility="gone" />
+    </RadioGroup>
+
+</RelativeLayout>

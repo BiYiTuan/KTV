@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@drawable/mask_screen" >
+
+    <TextView
+        android:id="@+id/id_exit_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="239dp"
+        android:text="@string/exit_tip"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/id_exit_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="342dp"
+        android:background="@drawable/btn_exit_selector"
+        android:text="@string/exit_sure"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/id_exit_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="660dp"
+        android:layout_marginTop="342dp"
+        android:background="@drawable/btn_exit_selector"
+        android:text="@string/exit_cancel"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="32sp" />
+
+</RelativeLayout>

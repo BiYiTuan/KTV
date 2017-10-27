@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false" >
+
+    <TextView
+        android:id="@+id/id_singerlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/categorysinger_title"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/id_singerlist_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="65dp"
+        android:layout_toRightOf="@+id/id_singerlist_title"
+        android:text="@string/category_count"
+        android:textColor="@color/umlist_count_text"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/id_singerlist_keystr"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="834dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical"
+        android:hint="@string/searchsinger_keyword_hint"
+        android:maxLength="10"
+        android:textColor="@color/umlist_check_text"
+        android:textColorHint="@color/umlist_hint_text"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/id_singerlist_icon"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1130dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/singer_search_unselected" />
+
+    <View
+        android:layout_width="324dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="827dp"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/line_singer_search" />
+
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_singerlist_imagerotation"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/search_loading" />
+
+    <ImageView
+        android:id="@+id/id_singerlist_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="123dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/singer_focus"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/id_singerlist_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item0"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="153dp"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item1"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item0"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item0"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item2"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item1"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item1"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item3"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item2"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item2"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item4"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item3"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item3"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item5"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item4"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item4"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item6"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/id_singerlist_item0"
+            android:layout_below="@+id/id_singerlist_item0"
+            android:layout_marginTop="40dp"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item7"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item6"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item6"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item8"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item7"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item7"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item9"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item8"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item8"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item10"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item9"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item9"
+            android:focusable="true" />
+
+        <com.sz.ead.app.ktv.ui.widget.SingerView
+            android:id="@+id/id_singerlist_item11"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/id_singerlist_item10"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/id_singerlist_item10"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <com.sz.ead.app.ktv.ui.widget.Indicator
+        android:id="@+id/id_singerlist_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:visibility="visible" />
+
+    <com.sz.ead.app.ktv.ui.widget.EmptyView
+        android:id="@+id/id_singerlist_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+</RelativeLayout>

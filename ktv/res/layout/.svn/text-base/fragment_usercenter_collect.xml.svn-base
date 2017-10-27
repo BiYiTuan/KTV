@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/id_collect_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="67dp"
+        android:gravity="center"
+        android:text="@string/usercenter_collect_count"
+        android:textColor="@color/umlist_count_text"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/id_collect_add"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="824dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_usercenter_addall_selector"
+        android:nextFocusDown="@id/lv_collect"
+        android:nextFocusLeft="@id/rbtn_usercenter_collect"
+        android:text="@string/usercenter_collect_addall"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/id_collect_clear"
+        android:layout_width="108dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1087dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_mulist_selector"
+        android:nextFocusDown="@id/lv_collect"
+        android:text="@string/usercenter_collect_clear"
+        android:textColor="@color/btn_umlist_txt_sel"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="915dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/line_umlist" />
+
+    <ListView
+        android:id="@+id/id_collect_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="121dp"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="9dp"
+        android:focusable="true"
+        android:layoutAnimation="@anim/list_anim_layout"
+        android:listSelector="@drawable/listselector_blue_888_selector"
+        android:nextFocusLeft="@id/rbtn_usercenter_collect"
+        android:scrollbars="none" />
+
+</RelativeLayout>

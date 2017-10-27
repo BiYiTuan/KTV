@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="934dp"
+    android:layout_height="550dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/menu_search_bg" >
+
+    <include layout="@layout/dialog_menu_search_keyboard" />
+
+    <ViewStub
+        android:id="@+id/id_menu_search_hotword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/dialog_menu_search_hotword" />
+
+    <ViewStub
+        android:id="@+id/id_menu_search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/dialog_menu_search_result" />
+
+</RelativeLayout>

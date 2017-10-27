@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="682dp"
+    android:layout_height="264dp"
+    android:background="@drawable/menu_tone_bg" >
+
+    <!-- 伴奏 -->
+    <RelativeLayout
+        android:id="@+id/id_menu_tone1"
+        android:layout_width="632dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/menu_tone_item_selector"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true" >
+
+        <SeekBar
+            android:id="@+id/id_menu_tone1_seekbar"
+            style="?android:attr/seekBarStyle"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="100"
+            android:maxHeight="16dp"
+            android:minHeight="16dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/style_sound_progressbar"
+            android:thumb="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/id_menu_tone1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/id_menu_tone1_seekbar"
+            android:duplicateParentState="true"
+            android:gravity="end"
+            android:text="@string/menu_tone_title_1"
+            android:textColor="@color/menu_txt_sel"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/id_menu_tone1_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/id_menu_tone1_seekbar"
+            android:duplicateParentState="true"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/menu_txt_sel"
+            android:textSize="22sp" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <!-- 话筒 -->
+    <RelativeLayout
+        android:id="@+id/id_menu_tone2"
+        android:layout_width="632dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="141dp"
+        android:background="@drawable/menu_tone_item_selector"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true" >
+
+        <SeekBar
+            android:id="@+id/id_menu_tone2_seekbar"
+            style="?android:attr/seekBarStyle"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="100"
+            android:maxHeight="16dp"
+            android:minHeight="16dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/style_sound_progressbar"
+            android:thumb="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/id_menu_tone2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/id_menu_tone2_seekbar"
+            android:duplicateParentState="true"
+            android:gravity="end"
+            android:text="@string/menu_tone_title_2"
+            android:textColor="@color/menu_txt_sel"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/id_menu_tone2_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/id_menu_tone2_seekbar"
+            android:duplicateParentState="true"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/menu_txt_sel"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

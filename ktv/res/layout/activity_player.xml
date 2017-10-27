@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.sz.ead.app.ktv.ui.widget.KtvVideoView
+        android:id="@+id/id_player_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <!-- 欢迎背景图片 -->
+    <ImageView
+        android:id="@+id/id_player_welcome"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/player_bg" />
+
+    <!-- 加载图片 -->
+    <com.sz.ead.app.ktv.ui.widget.ImageRotation
+        android:id="@+id/id_player_waiting"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/search_loading" />
+    
+    <!-- 正在播放 -->
+    <TextView
+        android:id="@+id/id_player_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/umlist_check_text"
+        android:textSize="32sp"
+        android:text="" />
+    
+    <!-- 下一首 -->
+    <TextView
+        android:id="@+id/id_player_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="102dp"
+        android:textColor="@color/umlist_normal_text"
+        android:textSize="28sp"
+        android:text="" />
+    
+    <!-- 流媒体维护 -->
+    <ImageView
+        android:id="@+id/id_player_preserve"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

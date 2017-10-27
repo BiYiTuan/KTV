@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp" >
+
+    <TextView
+        android:id="@+id/id_feeauth_content"
+        style="@style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/fee_tip_icon"
+        android:gravity="center_vertical"
+        android:text="@string/fee_auth_error"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_feeauth_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_feeauth_pay"
+            style="@style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/fee_info_icon_selector"
+            android:text="@string/fee_auth_left"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/id_feeauth_cancel"
+            style="@style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fee_info_icon_selector"
+            android:text="@string/fee_auth_right"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

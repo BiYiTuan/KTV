@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="6000"
+        android:fromXDelta="-48"
+        android:toXDelta="48"
+        android:repeatCount="infinite" />
+
+    <alpha
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="6000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.2" 
+        android:repeatCount="infinite" />
+
+</set>

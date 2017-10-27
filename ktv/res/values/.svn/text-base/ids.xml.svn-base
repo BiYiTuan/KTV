@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="rbtn_umlist_selected" type="id">false</item>
+    <item name="rbtn_umlist_sung" type="id">false</item>
+    <item name="lv_umsung" type="id">false</item>
+    <item name="lv_umselected" type="id">false</item>
+    
+    
+    <item name="rbtn_usercenter_collect" type="id">false</item>
+    <item name="rbtn_usercenter_setting" type="id">false</item>
+    <item name="rbtn_usercenter_about" type="id">false</item>
+    <item name="lv_collect" type="id">false</item>
+  
+
+    <!--
+        	<item type="id" name="rlyt_recommend_0">false</item>
+   	<item type="id" name="rlyt_recommend_1">false</item>
+   	<item type="id" name="rlyt_recommend_2">false</item>
+   	<item type="id" name="rlyt_recommend_3">false</item>
+   	<item type="id" name="rlyt_recommend_4">false</item>
+   	<item type="id" name="rlyt_recommend_5">false</item>
+   	<item type="id" name="rlyt_recommend_6">false</item>
+   	<item type="id" name="rlyt_recommend_7">false</item>
+   	<item type="id" name="rlyt_recommend_8">false</item>
+   	<item type="id" name="rlyt_recommend_9">false</item>
+   	<item type="id" name="rlyt_recommend_10">false</item>
+   	<item type="id" name="rlyt_recommend_11">false</item>
+    -->
+
+</resources>
